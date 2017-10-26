@@ -1,0 +1,16 @@
+passwd
+
+[users]
+User1=password1
+User2=password2
+
+authz
+[groups]
+allaccess = user1
+someaccess = user2
+
+[/]
+@allaccess = rw
+
+[/someproject]
+@someaccess = r
